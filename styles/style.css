@@ -1,0 +1,107 @@
+
+
+
+html,body{
+    height: 100%;
+    background-color:#fbfbfb;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: "Geist", "Helvetica Neue", Arial, sans-serif;
+}
+.active{
+    display: flex;
+}
+.disable{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: #ff8000;
+    font-weight: 900;
+}
+#heroSection{
+    height: 100%;   
+    /* display: none; */
+}
+
+.hero{
+    height: 90%;
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.lightWords{
+    color: #8d8f8f;
+    /* letter-spacing: 3px; */
+}
+
+.strongWords{
+    color: #ff8000;
+    /* letter-spacing: 3px; */
+    /* color: #fff700; */
+}
+
+.navItems{
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0px;
+}
+.menu{
+    display: none;
+}
+.heroImage{
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%;
+
+}
+.menuSection {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    height: 100dvh;
+    background-color: #fbfbfb;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+/* .menuSection.active {
+    display: flex;
+} */
+.menulist{
+    font-size: 50px;
+}
+.aboutRow{
+    height: 80%;
+    margin-top: 70px;
+}
+
+@media(max-width:992px){
+    .navItems{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        color: #ff8000;
+        font-weight: 900;
+        padding-right: 1.5rem;
+        margin: 0px;
+        align-items: center;
+    }
+}
