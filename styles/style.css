@@ -101,27 +101,20 @@ li a{
 #services{
     height: 100%;
     padding-top: 50px;
+    /* text-align: center; */
 }
-.serviceCard{
-    margin-top: 40px;
-    /* background-color: #8d8f8f; */
-    color: #ff8000;
-    border: 2px solid;
-    border-radius: 50px;
-    width: fit-content;
-    padding: 10px;
-    padding-inline: 20px;
-    /* box-shadow: 0px 0px 0px 0px; */
+.serviceCont{
+    margin-top: 5%;
 }
 
-.serviceCard:hover{
-    /* box-shadow: 1px 1px 1px 1px; */
-    transition-duration: 0.3s;
-    cursor: pointer;
-    background-color: #ff8000;
-    color: white;
-    /* border: none; */
+.serviceImage{
+    width: 500px;
 }
+
+.serviceList strong{
+    font-size:x-large ;
+}
+
 /* .serviceCard:nth-child(1){
     display: none;
 }
@@ -135,110 +128,6 @@ li a{
     display: none;
 } */
 
-
-
-.servicesProvided {
-    margin-top: 20px;
-    align-items: center;
-}
-
-.serviceList {
-    position: relative;
-    z-index: 2;
-}
-
-.serviceCard {
-    margin-top: 20px;
-    color: #ff8000;
-    border: 2px solid #ff8000;
-    border-radius: 50px;
-    width: fit-content;
-    max-width: 100%;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.serviceCard p {
-    margin: 0;
-}
-
-.serviceCard:hover,
-.serviceCard.selected {
-    background-color: #ff8000;
-    color: #fff;
-}
-
-.serviceCard.selected {
-    border-radius: 20px;
-    width: 100%;
-}
-
-.serviceDescription {
-    display: none;
-    margin-top: 15px;
-    line-height: 1.7;
-    font-size: 15px;
-    color: #fff;
-    max-width: 400px;
-}
-
-.serviceCard.selected .serviceDescription {
-    display: block;
-}
-
-.backToServices {
-    display: none;
-    background: none;
-    border: none;
-    color: #ff8000;
-    padding: 0;
-    margin: 20px 0 10px;
-    cursor: pointer;
-    font: inherit;
-}
-
-.backToServices.visible {
-    display: block;
-}
-
-.serviceImageWrapper {
-    overflow: hidden;
-    border-radius: 20px;
-    min-height: 300px;
-}
-
-.serviceImage {
-    display: block;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
-}
-
-#serviceDesc {
-    min-width: 0;
-}
-
-@media (max-width: 767px) {
-    .servicesProvided {
-        margin-top: 50px;
-    }
-
-    .serviceCard {
-        width: 100%;
-        text-align: left;
-    }
-
-    .serviceImageWrapper {
-        min-height: 220px;
-        margin-top: 25px;
-    }
-
-    .serviceImage {
-        height: 300px;
-    }
-}
 
 
 
