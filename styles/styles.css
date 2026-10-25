@@ -36,11 +36,18 @@ a:hover{
     color: #ff8000;
 }
 
+.disable{
+    display: none;
+}
+.active{
+    display: block;
+}
+
 
 #menuSection{
     height: 100% ;
     padding: 25px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15%;
 }
@@ -52,6 +59,7 @@ a:hover{
 }
 #heroSection {
     min-height: 100vh;
+    display: block;
 }
 #navbar{
         /* position: fixed;

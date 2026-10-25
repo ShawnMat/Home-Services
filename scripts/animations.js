@@ -1,12 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.set(".menuSection", {
+gsap.set("#menuSection", {
     yPercent: -100,
     autoAlpha: 0
 });
 
 function openMenuAnimation() {
-    gsap.to(".menuSection", {
+    gsap.to("#menuSection", {
         yPercent: 0,
         autoAlpha: 1,
         duration: 0.8,
@@ -15,7 +15,7 @@ function openMenuAnimation() {
 }
 
 function closeMenuAnimation() {
-    gsap.to(".menuSection", {
+    gsap.to("#menuSection", {
         yPercent: -100,
         autoAlpha: 0,
         duration: 0.6,
