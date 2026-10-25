@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbfbfb">
+
     <title>Home Cleaning Services | Kerala</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,71 +12,116 @@
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <div id="menuSection">
-        <p class="light" id="closeBtn">close</p>
-        <div class="menuList">
-            <ul>
-                <hr>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#about">about</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#service">services</a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#contact">contacts</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <section id="heroSection" class="p-4">
-        <div id="navbar">
+
+    <!-- Mobile Menu -->
+    <div id="menuSection" aria-hidden="true" inert>
+        <div class="menuHeader">
             <h3>
                 <span class="light">home</span><strong class="strong">services</strong>
             </h3>
-            <p class="strong fw-bold m-0 d-flex align-items-center" id="menuBtn">menu</p>
-            <ul class="gap-4 fw-bold">
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#about" >about</a>
-                </li>
-                <li>
-                    <a href="#service">services</a>
-                </li>
-                <li>
-                    <a href="#contact">contact</a>
-                </li>
+
+            <button type="button" id="closeBtn" aria-label="Close menu">
+                close <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <nav class="menuList" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#home">home <span>01</span></a></li>
+                <li><a href="#about">about <span>02</span></a></li>
+                <li><a href="#service">services <span>03</span></a></li>
+                <li><a href="#contact">contact <span>04</span></a></li>
             </ul>
-        </div>
+        </nav>
+
+        <p class="menuNote">Care for every corner of your home.</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="heroSection" class="p-4">
+
+        <header id="navbar">
+            <a href="#home" class="brand">
+                <h3>
+                    <span class="light">home</span><strong class="strong">services</strong>
+                </h3>
+            </a>
+
+            <button type="button" id="menuBtn" aria-controls="menuSection" aria-expanded="false">
+                menu <span aria-hidden="true">↗</span>
+            </button>
+
+            <nav class="desktopNav" aria-label="Main navigation">
+                <ul class="gap-4 fw-bold">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#service">services</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <hr>
-        <div class="hero">
-            <picture class=" heroImage">
-                <img src="/images/homeservice heroImage.png" alt="" class="img-fluid">
+
+        <main class="hero" id="home">
+
+            <picture class="heroImage">
+                <img
+                    src="/images/homeservice heroImage.png"
+                    alt="Professional home cleaning services"
+                    fetchpriority="high"
+                >
             </picture>
-            <div class="heroText position-absolute">
-                <p class="text-white fw-bold"><span>Services at your</span><br><strong class="strong">Door Step</strong></p>
-                <small class="text-white fw-bold">From <span class="strong fw-bolder">spotless interiors</span> to <span class="strong fw-bolder">sparkling exteriors</span>,<br> we bring reliable home cleaning and care services right <br>to your <span class="strong fw-bolder">doorstep</span></small>
+
+            <div class="heroOverlay" aria-hidden="true"></div>
+
+            <div class="heroText">
+                <p class="text-white fw-bold">
+                    <span>Services at your</span><br>
+                    <strong class="strong">Door Step</strong>
+                </p>
+
+                <small class="text-white fw-bold">
+                    From <span class="strong fw-bolder">spotless interiors</span>
+                    to <span class="strong fw-bolder">sparkling exteriors</span>,
+                    we bring reliable home cleaning and care services right
+                    to your <span class="strong fw-bolder">doorstep</span>.
+                </small>
             </div>
-            <button class="CTAbtn btn position-absolute rounded-0 ">Book Appointment</button>
-        </div>
-    </section>
-    <section class="h-100" id="about">
 
+            <a class="CTAbtn btn rounded-0" href="#contact">
+                Book Appointment <span aria-hidden="true">↗</span>
+            </a>
+
+        </main>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="contentSection">
+        <p class="sectionEyebrow">ABOUT HOME SERVICES</p>
+        <h2>Care for your home,<br><span class="strong">down to every detail.</span></h2>
+        <p>Reliable home cleaning and care services for the spaces you live in, inside and out.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="contentSection">
+        <p class="sectionEyebrow">WHAT WE DO</p>
+        <h2>Services designed<br>around your home.</h2>
+        <p>Get in touch to learn more about our interior, exterior, and home-care services.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contentSection contactSection">
+        <p class="sectionEyebrow">LET'S GET STARTED</p>
+        <h2>Ready to give your home<br><span class="strong">some extra care?</span></h2>
+        <p>Contact us to discuss the services you need.</p>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/scripts/animations.js"></script>
     <script src="/scripts/script.js"></script>
+
 </body>
 </html>
